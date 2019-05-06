@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+    h1, h3, legend{
+        font-family:'Karla', sans-serif;
+    }
+
+    h1, h3, legend, form, select, label, fieldset{
+        text-align:center;
+    }
+
+    @media screen and (max-width:768px)
+    {
+        h1, h3, legend, fieldset{
+            display:flex;
+        }
+    }
+
+    </style>
+    <link href="fight.css" rel="stylesheet">
+    <body>
+        <nav>
+            <a id="logoid" href="index.html">#Fightrak</a>
+            <a href="mma.html">MMA</a>
+            <a href="boxing.html">Boxing</a>
+            <a href="references.html">References</a>
+        </nav>
+
+        <h1>Contact Us</h1>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <fieldset><legend>Please enter your return contact information and potential comments/inquiries below</legend>
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" id="Email" required="required" placeholder="you@yourdomain.com">
+            <br>
+            <label for="Comments">Comments:</label>
+            <br>
+            <textarea name="Comments" id="Comments" rows="7" cols="20" required="required"></textarea>
+            <br>
+            <input id="Submit" type="submit" value="submit">
+
+        </fieldset>
+        </form>
+
+        <h3>Optional Survey</h3>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <label>How do you feel about our website?</label><br><br>
+        <input type="radio" name="Rating" id="happyid" value="Good">Good<br><br>
+        <input type="radio" name="Rating" id="notbadid" value="Decent">Decent<br><br>
+        <input type="radio" name="Rating" id="okcouldbebetterid" value="Mediocre">Mediocre<br><br>
+        <input type="radio" name="Rating" id="disgracefulid" value="Bad">Bad<br><br>
+
+        <label>Do you visit any other combat sports media websites?</label><br><br>
+        <select size="4" name="Other site" id="favSportMediaID">
+            <option value="None">None</option>
+            <option value="Sherdog">Sherdog</option>
+            <option value="BloodyElbow">BloodyElbow</option>
+            <option value="BoxingScene">BoxingScene</option>
+        </select><br><br>
+
+        <label>What are your favorite sports?</label><br><br>
+        <input type="checkbox" name="Mixed Martial Arts" value="MMA">MMA<br>
+        <input type="checkbox" name="Boxing" value="Boxing">Boxing<br>
+        <input type="checkbox" name="football" value="Football">Football<br>
+        <input type="checkbox" name="soccer" value="Soccer">Soccer<br><br>
+        <input id="Submit" type="submit" value="submit"><br>
+        <input id="Reset" type="reset" value="reset">
+
+
+        <footer role="contentinfo">Copyright &copy; Christopher Kirk-Pate 2019
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>#Fightrak Home</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Archivo|Oswald|Quattrocento|Raleway:300,400|Gugi');
+
+            html,body{
+                margin:0;padding:0;
+                width:100%;height:100%;
+                background-color:rgba(228, 194, 194, 0.794);
+            }
+            .sec{
+                width:100%;height:100%;margin:auto;
+                background:url(hbackgroundbw.jpg) no-repeat 50% 50%;
+                top:0;display:table;background-size:cover;
+            }
+            .sec .node1{
+                display:table-cell;vertical-align:middle;width:100%;
+                max-width:none;
+            }
+            
+            .content{
+                max-width:500px;
+                margin:auto;
+                text-align:center;
+            }
+            .content h1{
+                font-family:"Gugi",sans-serif;color:rgb(195, 81, 81);
+                font-size:500%;text-shadow:0 0 300px #000; font-weight:bolder;
+                border-bottom:25px solid rgba(221, 172, 117, 0.822);
+                border-top:25px solid rgba(221, 172, 117, 0.822);
+            }
+            .content .buttons{
+                border-radius:9px;color:rgb(221, 82, 82);text-decoration:none;
+                font-family:"Quattrocentro",sans-serif; border:3px solid;
+                padding: 7px 13px;font-weight:bold;text-transform:uppercase;
+                background-color:rgba(148, 96, 96, 0.5);font-weight:900;
+            }
+            .content .buttons:hover{
+                color:rgb(250, 233, 135)
+            }
+            p{
+                font-size:120%;line-height:210%;text-align:justify;font-family:'Raleway',sans-serif;
+                margin:3%;
+            }
+            h2{font-size:170%;text-align:center;font-family:'Archivo', sans-serif;font-weight:bolder;}
+            #quote{
+                    font-size:120%;
+                    font-family:'Oswald',Sans-serif;
+                    line-height:120%;text-align:center;
+                }
+            footer{
+                text-align:center;font-style:italic;
+            }
+
+            @media screen and (max-width: 720px)
+            {
+                .sec{
+                    background-image:none;background-color:#000;
+                }
+                .content h1{
+                    font-size:250%;
+                }
+                .buttons{
+                    font-size:110%;
+                    padding:7px 15px;
+                    margin:10px 10px 10px;
+                }
+                p{
+                    font-size:140%;
+                    font-family:'Raleway',Helvetica;
+                    line-height:160%;
+                }
+               
+            }
+        </style>
+    </head>
+    <body>
+        <section class="sec">
+            <div class="node1">
+                <div class="content">
+                    <h1>#Fightrak</h1>
+                    <a class="buttons" href="mma.html">MMA</a>
+                    <a class="buttons" href="boxing.html">Boxing</a>
+                    <br><br><br><br>
+                    <a class="buttons" href="contact.html">Contact Info</a>
+                    <a class="buttons" href="references.html">References</a>
+                </div>
+            </div>
+        </section>
+        <h2>Welcome!</h2>
+        <p>Welcome to #Fightrak! The premiere source for all your MMA/Boxing content.
+            We offer fight odds, predictions, miscellanious media, and more
+            for any diehard combat sport fans out there. We maintain an up-to-date and real-time 
+            analysis of fight odds, letting you know who is the underdog and favorite going into
+            each fight.
+        </p>
+        <h2>Need some help with the odds?</h2>
+        <p>This site utilizes the American odds format, which is the standard in 
+            combat sports. E.G. a fighter with a (+235) underdog bet using $100 on the line will
+            net the winner $235. On the other hand, if an opposing fighter is a (-275) favorite,
+            then $275 must be risked to win $100.</p>
+        <p id="quote">"Everybody has a plan until they get punched in the face." - Mike Tyson</p>
+            <footer role="contentinfo">Copyright &copy; Christopher Kirk-Pate 2019
+            </footer>
+    </body>
+</html>
